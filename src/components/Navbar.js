@@ -18,7 +18,7 @@ const NavBar = () => {
             const { id, href, text } = links;
             return (
               <li key={id}>
-                <a href={href} className='nav-link'>
+                <a href={href} rel='noreferrer' className='nav-link'>
                   {text}
                 </a>
               </li>
@@ -31,7 +31,12 @@ const NavBar = () => {
             const { id, href, icon } = links;
             return (
               <li key={id}>
-                <a href={href} target='_blank' className='nav-icon'>
+                <a
+                  href={href}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='nav-icon'
+                >
                   <i className={icon}></i>
                 </a>
               </li>

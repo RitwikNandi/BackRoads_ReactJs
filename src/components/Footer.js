@@ -9,7 +9,7 @@ const Footer = () => {
           const { id, href, text } = links;
           return (
             <li key={id}>
-              <a href={href} className='footer-link'>
+              <a href={href} rel='noreferrer' className='footer-link'>
                 {text}
               </a>
             </li>
@@ -27,7 +27,12 @@ const Footer = () => {
           const { id, href, icon } = links;
           return (
             <li key={id}>
-              <a href={href} target='_blank' className='footer-icon'>
+              <a
+                href={href}
+                target='_blank'
+                rel='noreferrer'
+                className='footer-icon'
+              >
                 <i className={icon}></i>
               </a>
             </li>

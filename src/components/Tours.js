@@ -1,15 +1,12 @@
 import React from "react";
 import tours from "../data/ToursData";
+import Title from "./Title";
 
 const Tours = () => {
   return (
     <React.Fragment>
       <section className='section' id='tours'>
-        <div className='section-title'>
-          <h2>
-            featured <span>tours</span>
-          </h2>
-        </div>
+        <Title title='featured' subTitle='tours' />
 
         <div className='section-center featured-center'>
           {tours.map((tour) => {
@@ -32,8 +29,8 @@ const Tours = () => {
                       </span>{" "}
                       {country}
                     </p>
-                    <p>{days}</p>
-                    <p>{price}</p>
+                    <p>{days} days</p>
+                    <p>from ${price}</p>
                   </div>
                 </div>
               </article>
